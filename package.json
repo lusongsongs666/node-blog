@@ -1,0 +1,23 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "close": "xl_close_port -p",
+    "debug": "node --inspect ./blog1/bin/www.js",
+    "dev": "cross-env NODE_ENV=dev nodemon ./blog1/bin/www.js",
+    "prod": "cross-env NODE_ENV=production nodemon ./blog1/bin/www.js"
+  },
+  "author": "songsong.lu",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "mysql": "^2.18.1",
+    "redis": "^3.0.2"
+  }
+}
